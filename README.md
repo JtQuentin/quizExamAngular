@@ -1,3 +1,7 @@
+EFREI - M2 
+Angular - Examen 1
+Quentin JOLIVET et Kévin FERREIRA
+
 # Quiz
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
