@@ -1,43 +1,59 @@
 {
+  "categories" : [
+    {
+      "id" : 1,
+      "label" : "Géographie"
+    }
+  ],
   "questions": [
     {
       "id": 1,
+      "idCategorie" : 1,
       "question": "Quelle est la capitale de la Mongolie ?"
     },
     {
       "id": 2,
+      "idCategorie" : 1,
       "question": "Quelle est la capitale de l'Estonie ?"
     },
     {
       "id": 3,
+      "idCategorie" : 1,
       "question": "Quelle est la capitale de la République centrafricaine ?"
     },
     {
       "id": 4,
+      "idCategorie" : 1,
       "question": "Quelle est la capitale de l'Uruguay ?"
     },
     {
       "id": 5,
+      "idCategorie" : 1,
       "question": "Quelle est la capitale de l'Australie ?"
     },
     {
       "id": 6,
+      "idCategorie" : 1,
       "question": "Quelle est la capitale du Brésil ?"
     },
     {
       "id": 7,
+      "idCategorie" : 1,
       "question": "Quelle est la capitale de la Roumanie ?"
     },
     {
       "id": 8,
+      "idCategorie" : 1,
       "question": "Quelle est la capitale de l'Espagne ?"
     },
     {
       "id": 9,
+      "idCategorie" : 1,
       "question": "Quelle est la capitale de la Chine ?"
     },
     {
       "id": 10,
+      "idCategorie" : 1,
       "question": "Quelle est la capitale de l'Allemagne"
     }
   ],
