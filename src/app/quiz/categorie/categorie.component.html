@@ -1,6 +1,8 @@
 <div class="container mt-5">
     <h2>Bonjour {{ playerName }}, choisis une catégorie pour commencer un quiz</h2>
 </div>
+<input type="text" id="filter" name="filter" [(ngModel)]="catName"  placeholder="Entrez une catégorie"/>
+<button class="btn" (click)="search()">Rechercher</button>
 <div class="card mb-4" *ngFor="let categorie of categories">
     <div class="card-header">
       <div class="card-title text-center"><h3>{{ categorie.label }}</h3></div>

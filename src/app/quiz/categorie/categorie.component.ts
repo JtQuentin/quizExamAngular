@@ -12,6 +12,7 @@ export class CategorieComponent {
 
   playerName = '';
   categories: any[] = this.categorieService.categories;
+  catName = '';
 
   constructor(private quizService : QuizServiceService, private router: Router,private route: ActivatedRoute, private categorieService : CategorieService) {
   }
@@ -21,7 +22,24 @@ export class CategorieComponent {
       this.quizService.playerName = params['playerName'];
       this.playerName = params['playerName'];
     });
-    this.categorieService.getCategories();
+    if (this.catName!== '') {
+      console.log("search 2")
+      //this.categorieService.garbage();
+      this.categorieService.getCategory(this.catName);
+      this.categories = this.categorieService.categories;
+      console.log(this.categories)
+    } else {
+      this.categorieService.getCategories();
+    }
+    
+  }
+
+  search() {
+    console.log("search")
+    //this.categorieService.garbage();
+    //this.categorieService.getCategory(this.catName);
+    this.ngOnInit()
+    //this.router.navigate(['/categories', this.playerName]);
   }
 
 }

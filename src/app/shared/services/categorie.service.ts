@@ -22,4 +22,19 @@ export class CategorieService {
     })
   }
   
+  getCategory(name: string){
+    this.garbage();
+    this.http.get(`http://localhost:3000/categories?label=${name}`).subscribe((cate : any) => {
+      for (const categorie of cate){
+          this.categories.push({
+            id: categorie.id,
+            label: categorie.label,
+          });    
+      }
+    })
+  }
+
+  garbage() {
+    this.categories = [];
+  }
 }
