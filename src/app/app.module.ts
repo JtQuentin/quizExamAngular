@@ -18,6 +18,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { TimeFormatPipe } from './quiz/timer/time-format.pipe';
 import { LettreReponseDirective } from './quiz/reponse/lettre-reponse.directive';
 import { ConfirmpopupComponent } from './quiz/confirmpopup/confirmpopup.component';
+import { CategorieComponent } from './quiz/categorie/categorie.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { ConfirmpopupComponent } from './quiz/confirmpopup/confirmpopup.componen
     TimeFormatPipe,
     LettreReponseDirective,
     ConfirmpopupComponent,
+    CategorieComponent,
   ],
   imports: [
     BrowserModule,

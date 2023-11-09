@@ -25,8 +25,8 @@ export class HomeComponent {
     return this.playerName.length < 1;
   }
 
-  navigateToQuiz() {
-    this.router.navigate(['/quiz', this.playerName]);
+  navigateToCategories() {
+    this.router.navigate(['/categories', this.playerName]);
   }
   
 }
