@@ -1,3 +1,8 @@
 <div class="container mt-5">
     <h2>Bonjour {{ playerName }}, choisis une catégorie pour commencer un quiz</h2>
 </div>
+<div class="card mb-4" *ngFor="let categorie of categories">
+    <div class="card-header">
+      <div class="card-title text-center"><h3>{{ categorie.label }}</h3></div>
+    </div>
+  </div>

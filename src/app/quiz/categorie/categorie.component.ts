@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { QuizServiceService } from 'src/app/quiz-service.service';
+import { CategorieService } from 'src/app/shared/services/categorie.service';
 
 @Component({
   selector: 'app-categorie',
@@ -10,8 +11,9 @@ import { QuizServiceService } from 'src/app/quiz-service.service';
 export class CategorieComponent {
 
   playerName = '';
+  categories: any[] = this.categorieService.categories;
 
-  constructor(private quizService : QuizServiceService, private router: Router,private route: ActivatedRoute) {
+  constructor(private quizService : QuizServiceService, private router: Router,private route: ActivatedRoute, private categorieService : CategorieService) {
   }
 
   ngOnInit(): void {
@@ -19,6 +21,7 @@ export class CategorieComponent {
       this.quizService.playerName = params['playerName'];
       this.playerName = params['playerName'];
     });
+    this.categorieService.getCategories();
   }
 
 }
