@@ -11,6 +11,7 @@ export class QuizServiceService {
   resultat = 0;
   quizEstTermine = false;
   playerName: string = '';
+  quizChoosed = 0;
 
   constructor(private http: HttpClient) { }
 
@@ -39,9 +40,10 @@ export class QuizServiceService {
     this.reponsesJoueur.push({questionId, reponse});
   }
 
-  getQuestionsReponses(){
-    this.http.get('http://localhost:3000/questions').subscribe((questions: any) => {
-      for (const question of questions){
+  getQuestionsReponses(id: number){
+    this.http.get(`http://localhost:3000/questions?idCategorie=${id}`).subscribe((questions: any) => {
+    console.log(questions);  
+    for (const question of questions){
         this.http.get(`http://localhost:3000/reponses?questionId=${question.id}`).subscribe((reponses: any) => {
           this.questions_reponses.push({
             id: question.id,

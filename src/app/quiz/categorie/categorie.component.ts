@@ -24,4 +24,9 @@ export class CategorieComponent {
     this.categorieService.getCategories();
   }
 
+  goToQuiz(id: number)
+  {
+    this.router.navigate(['/quiz', id]);
+  }
+
 }

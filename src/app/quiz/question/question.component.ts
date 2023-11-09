@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { QuizServiceService } from 'src/app/quiz-service.service';
 import { TimerService } from '../timer/timer.service';
 import { Observable } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -15,11 +16,12 @@ export class QuestionComponent implements OnInit{
   quizEstTermine = this.quizService.quizEstTermine;
   resultat = this.quizService.resultat;
 
-  constructor(private quizService: QuizServiceService, private timerService: TimerService) { }
+  constructor(private quizService: QuizServiceService, private timerService: TimerService, private route: ActivatedRoute) { }
 
 
   ngOnInit(): void {
-    this.quizService.getQuestionsReponses();
+    //this.quizService.questions_reponses = [];
+    this.quizService.getQuestionsReponses(this.quizService.quizChoosed);
     this.timerService.startTimer();
   }
 

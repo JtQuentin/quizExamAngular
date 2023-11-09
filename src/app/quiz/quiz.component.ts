@@ -12,6 +12,7 @@ export class QuizComponent{
   quizEstTermine = this.quizService.quizEstTermine;
   playerName = '';
   showPopup = false;
+  id = '';
 
   constructor(private quizService : QuizServiceService, private router: Router,private route: ActivatedRoute) {
   }
@@ -20,6 +21,14 @@ export class QuizComponent{
     this.route.params.subscribe(params => {
       this.quizService.playerName = params['playerName'];
       this.playerName = params['playerName'];
+      this.quizService.quizChoosed = params['playerName']; // to fix c'est bizarre... mais c pour test
+      console.log(params);
+      if (params['id'] !== undefined) { // à fix
+        console.log('ouioui param')
+        this.quizService.quizChoosed = params['id'];
+        console.log(params['id']);
+        //this.id = this.quizService.quizChoosed;
+      }
     });
   }
 
