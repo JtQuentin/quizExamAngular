@@ -9,7 +9,7 @@ import { CategorieComponent } from './quiz/categorie/categorie.component';
 
 const routes: Routes = [
   {path :'', component: HomeComponent},
-  {path : 'quiz/:playerName', component: QuizComponent},
+  {path : 'quiz/:id', component: QuizComponent},
   {path : 'result', component: ResultatComponent},
   {path : 'login', component: LoginComponent},
   {path : 'register', component: RegisterComponent},

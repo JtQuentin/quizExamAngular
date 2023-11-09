@@ -19,7 +19,7 @@ export class QuestionComponent implements OnInit{
 
 
   ngOnInit(): void {
-    this.quizService.getQuestionsReponses();
+    this.quizService.getQuestionsReponses(1);
     this.timerService.startTimer();
   }
 
