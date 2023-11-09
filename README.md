@@ -1,6 +1,6 @@
 EFREI - M2 
 Angular - Examen 1
-Quentin JOLIVET et Kévin FERREIRA
+Quentin JOLIVET, Kévin FERREIRA et Adrien BIGUET
 
 # Quiz
 
