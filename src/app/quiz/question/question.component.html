@@ -1,0 +1,12 @@
+<div class="container mt-5">
+    <div class="card mb-4" *ngFor="let question of questions_reponses; let i = index">
+      <div class="card-header">
+        <div class="card-title text-center"><h3>Question {{i + 1}} : {{ question.question }}</h3></div>
+      </div>
+      <div class="card-body">
+        <div class="row-cols-2 d-flex">
+          <app-reponse class="row-cols-2 d-flex justify-content-center btn m-2 reponse" [reponses]="question?.reponses" [questionId]="question?.id"></app-reponse>
+        </div>
+    </div>
+    </div>
+</div>

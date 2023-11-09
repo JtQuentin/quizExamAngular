@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <h2>C'est parti {{ playerName }}, soit prêt !</h2>
+    <div *ngIf="quizEstTermine">
+        <button type="button" class="btn btn-dark">Reset</button>
+    </div>
+    <div>
+        <app-question></app-question>
+    </div>
+    <div>
+        <button (click)="goToResultPage()" type="button" class="btn btn-dark">Résultats</button>
+            <app-confirmpopup
+                [text]="'Voulez-vous vraiment soumettre vos réponses ?'"
+                [show]="showPopup"
+                (confirmAction)="submitAnswers()"
+                (cancelAction)="cancelSubmit()">
+            </app-confirmpopup>
+    </div>
+</div>

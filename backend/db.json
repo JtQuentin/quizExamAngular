@@ -1,0 +1,268 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Quelle est la capitale de la Mongolie ?"
+    },
+    {
+      "id": 2,
+      "question": "Quelle est la capitale de l'Estonie ?"
+    },
+    {
+      "id": 3,
+      "question": "Quelle est la capitale de la République centrafricaine ?"
+    },
+    {
+      "id": 4,
+      "question": "Quelle est la capitale de l'Uruguay ?"
+    },
+    {
+      "id": 5,
+      "question": "Quelle est la capitale de l'Australie ?"
+    },
+    {
+      "id": 6,
+      "question": "Quelle est la capitale du Brésil ?"
+    },
+    {
+      "id": 7,
+      "question": "Quelle est la capitale de la Roumanie ?"
+    },
+    {
+      "id": 8,
+      "question": "Quelle est la capitale de l'Espagne ?"
+    },
+    {
+      "id": 9,
+      "question": "Quelle est la capitale de la Chine ?"
+    },
+    {
+      "id": 10,
+      "question": "Quelle est la capitale de l'Allemagne"
+    }
+  ],
+  "reponses": [
+    {
+      "questionId": 1,
+      "reponse": "Oulan-Bator",
+      "correcte": true
+    },
+    {
+      "questionId": 1,
+      "reponse": "Astana",
+      "correcte": false
+    },
+    {
+      "questionId": 1,
+      "reponse": "Tbilissi",
+      "correcte": false
+    },
+    {
+      "questionId": 1,
+      "reponse": "Bichkek",
+      "correcte": false
+    },
+    {
+      "questionId": 2,
+      "reponse": "Riga",
+      "correcte": false
+    },
+    {
+      "questionId": 2,
+      "reponse": "Tallinn",
+      "correcte": true
+    },
+    {
+      "questionId": 2,
+      "reponse": "Vilnius",
+      "correcte": false
+    },
+    {
+      "questionId": 2,
+      "reponse": "Helsinki",
+      "correcte": false
+    },
+    {
+      "questionId": 3,
+      "reponse": "Kinshasa",
+      "correcte": false
+    },
+    {
+      "questionId": 3,
+      "reponse": "Bangui",
+      "correcte": true
+    },
+    {
+      "questionId": 3,
+      "reponse": "Brazzaville",
+      "correcte": false
+    },
+    {
+      "questionId": 3,
+      "reponse": "Kigali",
+      "correcte": false
+    },
+    {
+      "questionId": 4,
+      "reponse": "Asunción",
+      "correcte": false
+    },
+    {
+      "questionId": 4,
+      "reponse": "Quito",
+      "correcte": false
+    },
+    {
+      "questionId": 4,
+      "reponse": "Montevideo",
+      "correcte": true
+    },
+    {
+      "questionId": 4,
+      "reponse": "Lima",
+      "correcte": false
+    },
+    {
+      "questionId": 5,
+      "reponse": "Wellington",
+      "correcte": false
+    },
+    {
+      "questionId": 5,
+      "reponse": "Sydney",
+      "correcte": false
+    },
+    {
+      "questionId": 5,
+      "reponse": "Melbourne",
+      "correcte": false
+    },
+    {
+      "questionId": 5,
+      "reponse": "Canberra",
+      "correcte": true
+    },
+    {
+      "questionId": 6,
+      "reponse": "Rio de Janeiro",
+      "correcte": false
+    },
+    {
+      "questionId": 6,
+      "reponse": "São Paulo",
+      "correcte": false
+    },
+    {
+      "questionId": 6,
+      "reponse": "Brasilia",
+      "correcte": true
+    },
+    {
+      "questionId": 6,
+      "reponse": "Buenos Aires",
+      "correcte": false
+    },
+    {
+      "questionId": 7,
+      "reponse": "Budapest",
+      "correcte": false
+    },
+    {
+      "questionId": 7,
+      "reponse": "Bucarest",
+      "correcte": true
+    },
+    {
+      "questionId": 7,
+      "reponse": "Zagreb",
+      "correcte": false
+    },
+    {
+      "questionId": 7,
+      "reponse": "Bratislava",
+      "correcte": false
+    },
+    {
+      "questionId": 8,
+      "reponse": "Seville",
+      "correcte": false
+    },
+    {
+      "questionId": 8,
+      "reponse": "Lisbonne",
+      "correcte": false
+    },
+    {
+      "questionId": 8,
+      "reponse": "Madrid",
+      "correcte": true
+    },
+    {
+      "questionId": 8,
+      "reponse": "Barcelone",
+      "correcte": false
+    },
+    {
+      "questionId": 9,
+      "reponse": "Pékin",
+      "correcte": true
+    },
+    {
+      "questionId": 9,
+      "reponse": "Shanghai",
+      "correcte": false
+    },
+    {
+      "questionId": 9,
+      "reponse": "Hong Kong",
+      "correcte": false
+    },
+    {
+      "questionId": 9,
+      "reponse": "Taipei",
+      "correcte": false
+    },
+    {
+      "questionId": 10,
+      "reponse": "Munich",
+      "correcte": false
+    },
+    {
+      "questionId": 10,
+      "reponse": "Hambourg",
+      "correcte": false
+    },
+    {
+      "questionId": 10,
+      "reponse": "Cologne",
+      "correcte": false
+    },
+    {
+      "questionId": 10,
+      "reponse": "Berlin",
+      "correcte": true
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "user"
+    },
+    {
+      "username": "Quentin",
+      "password": "quentin",
+      "id": 3
+    },
+    {
+      "username": "vincent",
+      "password": "vincent1",
+      "id": 4
+    }
+  ]
+}

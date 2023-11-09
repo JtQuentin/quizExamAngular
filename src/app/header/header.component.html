@@ -1,0 +1,20 @@
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand"><h2>{{ title }}</h2></span>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link"  routerLink="/">Accueil</a>
+            </li>
+        
+        <h3>{{ getUsername }}</h3>
+        </ul>
+    
+    <form class="form-inline my-2 my-lg-0">
+        <button *ngIf="!isUserConnected; else logoutTemplate" type="button" class="btn btn-dark" routerLink="/login">Se connecter</button>
+    <ng-template #logoutTemplate>
+      <button type="button" class="btn btn-dark" (click)="logout()" routerLink="/login">Se déconnecter</button>
+    </ng-template>
+      </form>
+
+    </nav>
+</header>
